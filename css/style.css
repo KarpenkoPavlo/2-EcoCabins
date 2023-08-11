@@ -1,0 +1,171 @@
+/*Connecting fonts-------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:900&display=swap);
+
+/*zeroing*/
+* {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+    line-height: 1;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+button {
+    line-height: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+}
+
+/*Default styles---------------------*/
+
+body {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #646D70;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+/*Adaptive settings------------------*/
+
+[class*="__container"] {
+    max-width: 50.625rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    margin: 0 auto;
+}
+
+/*Modules----------------------------*/
+
+.title {
+    font-family: Merriweather;
+    color: #fff;
+    font-size: 1.875rem;
+}
+.title--dark {
+    color: #222F33;
+}
+
+/*General styles---------------------*/
+
+.page {
+    flex: 1 1 auto;
+}
+.page__main {
+}
+
+/*Basic styles-----------------------*/
+
+/*Header-----------------------------*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.header__container {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.3125rem;
+    min-height: 6.5625rem;
+}
+.header__logo {
+}
+.header__body {
+    display: flex;
+    align-items: center;
+    column-gap: 2.6875rem;
+}
+.header__menu {
+}
+.header__button {
+    padding: .625rem 1.3125rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.menu__item {
+}
+.menu__link {
+}
+
+/*Main page--------------------------*/
+
+.main-section {
+    min-height: 100vh;
+    position: relative;
+}
+.main-section__cotainer {
+}
+.main-section__content {
+}
+.main-section__label {
+}
+.main-section__title {
+}
+.main-section__video-link {
+}
+.main-section__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.main-section__image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
