@@ -76,6 +76,7 @@ body {
 .title {
     font-family: Merriweather;
     color: #fff;
+    line-height: 130%;
     font-size: 1.875rem;
 }
 .title--dark {
@@ -183,17 +184,51 @@ body {
     padding-bottom: 1.875rem;
     position: relative;
     z-index: 2;
-    flex: 1 1 auto;
-    display: flex;
+    gap: 1.25rem;
+    grid-template-columns: 54.320988% 1fr;
     align-items: center;
+    display: grid;
+    flex: 1 1 auto;
+}
+@media (max-width: 43.75rem) {
+    .main-section__container {
+        grid-template-columns: auto;
+        align-content: center;
+    }
 }
 .main-section__content {
+    flex: 0 0 54.320988%;
 }
 .main-section__label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.main-section__label:not(:last-child) {
+    margin-bottom: 0.75rem;
 }
 .main-section__title {
 }
 .main-section__video-link {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+@media (min-width: 43.75em) {
+    .main-section__video-link {
+        justify-self: center;
+    }
+}
+.main-section__video-link::before {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 2rem;
+    border-radius: 50px;
+    background: url(../img/BTN\ Play.svg) left no-repeat;
 }
 .main-section__image {
     position: absolute;
@@ -201,6 +236,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
+    background-color: #000;
 }
 .main-section__image img {
     position: absolute;
@@ -209,4 +245,9 @@ body {
     top: 0;
     left: 0;
     object-fit: cover;
+}
+@media (max-width: 43.75rem) {
+    .main-section__image img {
+        opacity: 0.6;
+    }
 }
