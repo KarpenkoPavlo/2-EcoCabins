@@ -82,7 +82,14 @@ body {
 .title--dark {
     color: #222F33;
 }
-
+@media (max-width: 47.9988em) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+.text {
+    line-height: 185%;
+}
 /*General styles---------------------*/
 
 .page {
@@ -182,7 +189,7 @@ body {
 }
 .main-section__container {
     padding-top: 5.625rem;
-    padding-bottom: 1.875rem;
+    padding-bottom: 3.125rem;
     position: relative;
     z-index: 2;
     gap: 1.25rem;
@@ -273,26 +280,42 @@ body {
 /**/
 
 .materials {
+    position: relative;
+    z-index: 2;
 }
 .materials__container {
+    position: relative;
+    padding-bottom: 1.25rem;
+    z-index: 2;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 50% minmax(280px, 325px);
+    justify-content: space-between;
+    align-items: start;
     gap: 1.25rem;
+    min-width: 0;
 }
 .materials__content {
+    padding-top: 1.5625rem;
+    display: grid;
+    gap: 0.8125rem;
+    justify-items: start;
 }
 .materials__title {
 }
 .materials__text {
 }
 .materials__more {
+    border-radius: 0.25rem;
+    font-style: .75rem;
+    font-weight: 500;
+    padding: .625rem .875rem;
+    border: 1px solid #646d70;
 }
 .materials__slider {
-    position: relative;
-    max-width: 20.3125rem;
-    justify-self: end;
+    transform: translate(0, -20.765027%);
 }
 .slider-materials {
+    position: relative;
 }
 .slider-materials__wrapper {
 }
@@ -332,6 +355,44 @@ body {
 .slider-materials__pagination .swiper-pagination-bullet-active {
     opacity: 1;
 }
-
-
+@media (min-width: 47.9988em) {
+    .materials::before {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 2.3125rem;
+        transform: translate(0px, -100%);
+        width: 61.7%;
+    }
+    .materials::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 8.75rem;
+        background-color: #222F33;
+        width: 38.3%;
+    }
+}
+@media (max-width: 47.9988em) {
+    .materials__container {
+        grid-template-columns: auto;
+    }
+    .materials__slider {
+        transform: translate(0, 0);
+    }
+}
+/*Innovate---------------------------*/
+.inovate {
+    background-color: #222F33;
+    padding: 70px 0px 80px 0px;
+}
+.inovate__container {
+}
+.inovate__title {
+}
+.inovate__text {
+}
 
