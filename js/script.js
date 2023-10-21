@@ -5,6 +5,10 @@ const swiper = new Swiper('.materials__slider', {
       el: '.swiper-pagination',
       clickable: true,
     },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 });
 
 window.addEventListener('scroll', function () {
